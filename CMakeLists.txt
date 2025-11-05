@@ -16,7 +16,7 @@ set(RX_BUILD_APPS "OFF" CACHE BOOL "Build RXMesh applications")
 include(FetchContent)
 # RXMesh
 FetchContent_Declare(rxmesh
-    GIT_REPOSITORY https://github.com/owensgroup/RXMesh
+    GIT_REPOSITORY https://github.com/BrennanAndruss/RXMesh
     GIT_TAG        main
 )
 FetchContent_MakeAvailable(rxmesh)
