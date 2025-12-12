@@ -130,25 +130,18 @@ int main(int argc, char** argv)
 
     RXMeshStatic rx(argv[1]);
 
-    // Vertex Coordinates
-    auto vertex_pos = *rx.get_input_vertex_coordinates();
-
     /*
     // Example: Face and Vertex Normals
     */
 
-    
-    // rx.for_each_vertex(
-    //     DEVICE, [vertex_color, vertex_pos] __device__(const VertexHandle vh)
-    //     {
-    //         vertex_color(vh, 0) = 0.9;
-    //         vertex_color(vh, 1) = vertex_pos(vh, 1);
-    //         vertex_color(vh, 2) = vertex_pos(vh, 2);
-    //     }
-    // );
+    // Vertex Coordinates
+    auto vertex_pos = *rx.get_input_vertex_coordinates();
 
     // Face Normal
     auto face_normal = *rx.add_face_attribute<float>("fNormals", 3);
+
+
+    
     
     // Compute face normals
     compute_face_normal<float, 256>(rx, vertex_pos, face_normal);

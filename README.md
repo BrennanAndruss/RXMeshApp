@@ -10,13 +10,13 @@ Built off the RXMeshApp template, applications of the RXMesh library for process
 
 ### Face and Vertex Normals
 
-![Normals](./normals.png)
+![Normals](./docs/images/normals.png)
 
 - Face normals in yellow, vertex normals in pink
 
 ### Heat Diffusion
 
-![Diffusion](./diffusion.png)
+![Diffusion](./docs/images/diffusion.png)
 
 - Normalized heatmap coloring, with yellow as  max heat at the source
 
